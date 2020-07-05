@@ -244,6 +244,8 @@ const callChrome = async () => {
         }
 
         await remoteInstance ? browser.disconnect() : browser.close();
+
+        process.exit(0);
     } catch (exception) {
         if (browser) {
 
